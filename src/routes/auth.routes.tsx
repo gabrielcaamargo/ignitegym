@@ -13,14 +13,18 @@ export type TAuthNavigationRoutesProps = NativeStackNavigationProp<TAuthRoutes>
 const { Navigator, Screen } = createNativeStackNavigator<TAuthRoutes>()
 
 export function AuthRoutes() {
-  <Navigator>
-    <Screen 
-      component={Signin} 
-      name='Signin' 
-    />
-    <Screen 
-      component={Signup} 
-      name='Signup' 
-    />
+  return (
+    <Navigator screenOptions={{
+      headerShown: false
+    }}>
+      <Screen 
+        component={Signin} 
+        name='Signin' 
+      />
+      <Screen 
+        component={Signup} 
+        name='Signup' 
+      />
   </Navigator>
+  )
 }
