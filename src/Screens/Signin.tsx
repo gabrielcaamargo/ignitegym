@@ -24,6 +24,7 @@ export function Signin() {
       <VStack flex={1} px={8}>
         <Image 
           source={BackgroundImage}
+          defaultSource={BackgroundImage}
           alt='People working out'
           resizeMode='contain'
           position='absolute'
