@@ -7,15 +7,15 @@ interface IExerciseCardProps extends TouchableOpacityProps {}
 export function ExerciseCard({ ...rest }: IExerciseCardProps) {
   return (
     <TouchableOpacity {...rest}>
-      <HStack bg='gray.700' py={1} px={4} rounded='md' mb={4} alignItems='center'>
+      <HStack bg='gray.700' py={2} px={4} rounded='md' mb={4} alignItems='center'>
         <Image
-          source={{ uri: 'https://thumb.mais.uol.com.br/16669847-large.jpg?ver=0' }}
+          source={{ uri: 'https://www.origym.com.br/midia/remada-unilateral-3.jpg' }}
           alt='Imagem do exercício'
           h={16}
           w={16}
           rounded='md'
           mr={4}
-          resizeMode='center'
+
         />
 
         <VStack flex={1}>
